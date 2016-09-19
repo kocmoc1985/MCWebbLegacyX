@@ -160,6 +160,7 @@ function isOnlyColumn2($link) {
 //        "_test",
         "_c_",
         "_work_ip",
+        "_mclauncher",
         //
         "_upload",
         "_upload_public",
