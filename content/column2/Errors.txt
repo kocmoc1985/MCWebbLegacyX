@@ -1,0 +1,12 @@
+﻿1_Stempel Problem; F1-Druck oder  Drucksignals  Fehler; F2 Pressure setting is much less than Pressure max;F4 Pressure signal problem;F8 Ram position signal defect;F9 Ram position signal defect or operator interference;F10 Ram position signal defect;F27 Ram stuck
+2_Sattel Problem 
+3_Sattel Termocouple; F5 Thermopaar Fehler zu  niedrig; F6 Fehler failure zu hoch;F7 - Prüfen Thermopaar, die Wert ist nicht stabile
+4_Klappe Problem
+5_Bereitelsband Abruf Problem 
+6_Öl Abruf Problem 
+7_Russ Abruf Problem 
+8_Stoff Abruf Problem 
+9_L Rotor;F24 mills are not ready to axceept the batch;F25 Motor stop due to current limit exceed; Problem Russ-Öl Gleitbewegung
+10_R Rotor;"";"";""
+11_L Gehäuse;F21 Mixcont control is interrupted during feeding;F22  Mixcont control is interrupted during mixing;""
+12_R Gehäuse;"";"";""

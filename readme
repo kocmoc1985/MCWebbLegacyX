@@ -1,0 +1,9 @@
+#1.pass for uploading files = "mixrt"
+
+#2.logins are found in ProjectDocs file = "users"
+
+#3. Use my java script "POST(...)" method to switch between links if needed.
+You need to add a "click" event to a div and when the div is clicked call the "POST(...)" with right parameters
+
+#4.The solution for using some "asp scripts" could be that first the asp page is loaded 
+and redirected to an php page directly after

@@ -1,0 +1,47 @@
+{"signal":"BATCH_MC_MODE","type":"D","I\/O":"I","range":"0..1","description":"Start batch in MC_MODE "}
+{"signal":"CONTROL_START","type":"D","I\/O":"I","range":"0..1","description":"Control Start (Steuerung Start)"}
+{"signal":"PLC_CONTROL","type":"D","I\/O":"I","range":"0..1","description":"BCS CONTROL (PLC Steuerung)"}
+{"signal":"MC_CONTROL","type":"D","I\/O":"O","range":"","description":"MixCont CONTROL (Mixcont Steuerung)"}
+{"signal":"BCS_POSITION","type":"A","I\/O":"I","range":"0..99","description":"BCS Anzeiger der Schritte"}
+{"signal":"MC_POSITION","type":"A","I\/O":"O","range":"0..99","description":"MC Anzeiger der Schritte"}
+{"signal":"MC_READY","type":"A","I\/O":"O","range":"0..2","description":"MC Bereitschaft Anzeiger"}
+{"signal":"BCS_WATCHDOG","type":"A","I\/O":"I","range":"0..1000","description":"BCS_WATCHDOG"}
+{"signal":"MC_WATCHDOG","type":"A","I\/O":"O","range":"0..1000","description":"MC_WATCHDOG"}
+{"signal":"INTERRUPT","type":"D","I\/O":"O","range":"","description":"MixCont Interrupts MixCont Control, (MixCont Unterbricht MixCont Steuerung)"}
+{"signal":"TOTAL_ADDING","type":"D","I\/O":"I","range":"","description":"Total loading phase schows material in progress. (Gesamte Erg\u00e4nzung-Phase)"}
+{"signal":"DISCHARGE","type":"D","I\/O":"I","range":"","description":"Discharging step (Auswurf Schritt)"}
+{"signal":"RAM_IS_UP","type":"D","I\/O":"I","range":"","description":"RAM is in UPPER position"}
+{"signal":"RAM_IS_DOWN","type":"D","I\/O":"I","range":"","description":"Ram is in Bottom position"}
+{"signal":"POWER","type":"A","I\/O":"I","range":"0..650","description":"Power (Leistung) Signal for the current moment"}
+{"signal":"CURRENT","type":"A","I\/O":"I","range":"0..2000","description":"Current (Strom)"}
+{"signal":"TEMP_1","type":"A","I\/O":"I","range":"0..250","description":"Left chamber side temp"}
+{"signal":"TEMP_2","type":"A","I\/O":"I","range":"0..250","description":"Right chamber side temp"}
+{"signal":"TEMP_3","type":"A","I\/O":"I","range":"0..200","description":"Act. Discharge door temp"}
+{"signal":"SPEED","type":"A","I\/O":"I","range":"0..1200","description":"Rotor Speed"}
+{"signal":"RAM","type":"A","I\/O":"I","range":"0..1500","description":"Ram(Stempel) actual position"}
+{"signal":"PRESSURE","type":"A","I\/O":"I","range":"0..7","description":"Ram Pressure"}
+{"signal":"SET_SPEED","type":"A","I\/O":"O","range":"0..60","description":"MixCont Current  Speed Setting"}
+{"signal":"DOOR_OPEN","type":"D","I\/O":"O","range":"","description":"Set materials Door Open"}
+{"signal":"DOOR_CLOSE","type":"D","I\/O":"O","range":"","description":"Set material Door Close"}
+{"signal":"RAM_UP","type":"D","I\/O":"O","range":"","description":"MixCont sets Ram Up"}
+{"signal":"RAM_DOWN","type":"D","I\/O":"O","range":"","description":"MixCont sets Ram down"}
+{"signal":"SET_PRESSURE","type":"A","I\/O":"O","range":"","description":"MixCont sets Pressure value"}
+{"signal":"TIME_BATCH_END","type":"D","I\/O":"O","range":"","description":"MixCont sets Pressure value"}
+{"signal":"RECIPE_ID","type":"S","I\/O":"I","range":"","description":"Recipe identifier"}
+{"signal":"STEP","type":"S","I\/O":"I","range":"","description":""}
+{"signal":"ALTERNATIVE","type":"S","I\/O":"I","range":"","description":""}
+{"signal":"ORDER_ID","type":"S","I\/O":"I","range":"","description":""}
+{"signal":"BATCH_NR","type":"A","I\/O":"I","range":"0..999","description":"Batch number"}
+{"signal":"ALARM","type":"D","I\/O":"O","range":"0..999","description":"Alarm from MixCont"}
+{"signal":"ALARM_ID_MC","type":"A","I\/O":"O","range":"0..20","description":"Alarm Idetifier Mixcont"}
+{"signal":"ALARM_TEXT_MC","type":"S","I\/O":"O","range":"","description":"Alarm Text from MixCont"}
+{"signal":"ALARM_ID_BCS","type":"A","I\/O":"I","range":"","description":"Alarm identifier  from BCS"}
+{"signal":"OIL","type":"D","I\/O":"I","range":"","description":"Adding oil"}
+{"signal":"RCL","type":"D","I\/O":"I","range":"","description":"Ram cleaning"}
+{"signal":"CARBON","type":"D","I\/O":"I","range":"","description":"Adding carbon"}
+{"signal":"FILLERS","type":"D","I\/O":"I","range":"","description":"Adding fillers"}
+{"signal":"SMALL_CHEM","type":"D","I\/O":"I","range":"","description":"Adding small chemicals"}
+{"signal":"RUBBER","type":"D","I\/O":"I","range":"","description":"Addin Rubber and other stff from conveyer"}
+{"signal":"MATERIAL_DOOR","type":"D","I\/O":"I","range":"","description":""}
+{"signal":"MOTOR","type":"D","I\/O":"I","range":"","description":""}
+{"signal":"SMALL_CHEM_AUTO","type":"D","I\/O":"I","range":"","description":"Small chemicals automatic"}

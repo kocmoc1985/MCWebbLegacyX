@@ -1,0 +1,109 @@
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+
+        <loc>http://www.mixcont.com/</loc>
+
+        <lastmod>2013-06-26</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>1</priority>
+
+    </url>
+
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=products</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>1</priority>
+
+    </url>
+        
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=complete+solution</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=mixing+control</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=analysing+tools</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=mc+detector</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=mc+tracker</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=laboratory</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=mc+browser</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+        
+    <url>
+
+        <loc>http://www.mixcont.com/index.php?link=faq</loc>
+
+        <changefreq>monthly</changefreq>
+            
+        <priority>0.8</priority>
+
+    </url>
+
+</urlset>

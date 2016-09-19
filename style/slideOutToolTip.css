@@ -1,0 +1,132 @@
+/* 
+    Document   : slideOutToolTip
+    Created on : 2013-jun-03, 10:41:58
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+label {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+
+    /* Prevent some white flashing in Safari 5.1 */
+    -webkit-backface-visibility: hidden;
+
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#999999)); 
+    background-image: -webkit-linear-gradient(top, #eeeeee, #999999); 
+    background-image:    -moz-linear-gradient(top, #eeeeee, #999999); 
+    background-image:     -ms-linear-gradient(top, #eeeeee, #999999); 
+    background-image:      -o-linear-gradient(top, #eeeeee, #999999); 
+
+    -moz-border-radius:    20px; 
+    -webkit-border-radius: 20px; 
+    border-radius:         20px; 
+
+    -moz-background-clip:    padding; 
+    -webkit-background-clip: padding-box; 
+    background-clip:         padding-box; 
+
+    width: auto; 
+    padding: 20px;
+    margin: 24px 0;
+    opacity: 0;
+
+    -webkit-transform: scale(0) skew(50deg);
+    -moz-transform:    scale(0) skew(50deg);
+    -ms-transform:     scale(0) skew(50deg);
+    -o-transform:      scale(0) skew(50deg);
+
+    -webkit-transform-origin: 0px -30px;
+    -moz-transform-origin:    0px -30px;
+    -ms-transform-origin:     0px -30px;
+    -o-transform-origin:      0px -30px;
+
+    -webkit-transition: -webkit-transform ease-out .35s, opacity ease-out .4s;
+    -moz-transition:    -moz-transform    ease-out .35s, opacity ease-out .4s;
+    -ms-transition:     -ms-transform     ease-out .35s, opacity ease-out .4s;
+    -o-transition:      -o-transform      ease-out .35s, opacity ease-out .4s;
+}
+
+.box:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 30px;
+    border-bottom: 20px solid #eee;
+    border-left:   14px solid transparent;
+    border-right:  14px solid transparent;
+    width:  0;
+    height: 0;
+}
+
+.popUpControl:checked ~ label > .box {
+    opacity: 1;
+    -webkit-transform: scale(1) skew(0deg);
+    -moz-transform:    scale(1) skew(0deg);
+    -ms-transform:     scale(1) skew(0deg);
+    -o-transform:      scale(1) skew(0deg);
+}
+.popUpControl { 
+    display: none; 
+}
+
+/* For TEXT example */
+.link { color: blue; text-decoration: underline; }
+.title { display: block; font-weight: bold; margin: 0 0 10px 0; color: black; font: bold 16px Sans-Serif; text-decoration: none; }
+.copy { color: black; text-decoration: none;  }
+
+
+/* For IMAGE WITH BUTTON example */
+
+.button {
+    background: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.box img {
+    -moz-border-radius:    10px; 
+    -webkit-border-radius: 10px; 
+    border-radius:         10px; 
+}
+#doggiezzz:checked ~ label > span:first-child {
+    display: none;
+}
+#doggiezzz:checked ~ label:before {
+    content: "Less Dog!";
+}
+
+/*@Example with link and text, you can also use image*/
+/*<input type="checkbox" id="linkie" class="popUpControl">
+                        <label for="linkie" class="link">
+                           <span>link example</span>
+                           <span class="box">
+                           <span class="title">Title</span>
+                           <span class="copy">Pellentesque habitant morbi tristique senectus et netus</span>
+                        </span>
+                  </label> */
+
+/*@Example with Image & Button*/
+/*<input type="checkbox" id="doggiezzz" class="popUpControl">
+                <label for="doggiezzz" class="button">
+                   <span>More dogs!</span>
+                   <span class="box">
+                           <img src="http://placedog.com/260/260">
+                        </span>
+                </label> */
+
+
+

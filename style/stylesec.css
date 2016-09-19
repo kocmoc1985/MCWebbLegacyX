@@ -1,0 +1,243 @@
+/* 
+    Document   : stylesec
+    Created on : 2013-nov-06, 14:59:53
+    Author     : KOCMOC
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+/******************************************************************************/
+#choose_lang{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+
+.country_flag{
+    width: 30px;
+    height: 22px;
+
+    cursor: pointer;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    font-size: 0pt;
+    float: left;
+    margin-right: 5px;
+
+    /*Transition*/
+    -o-transition:0.5s;
+    -ms-transition:0.5s;
+    -moz-transition:0.5s;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+}
+
+.country_flag:hover{
+    width: 35px;
+    height: 22px;
+}
+
+.country_flag img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+
+#add_form{
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:10px;
+    padding-bottom:5px;
+    width:55%;
+    display: block;
+    overflow: auto;
+
+    color: black;
+
+    /* drop shadow */
+    -webkit-box-shadow: 0px 0px 5px 0px #444;
+    -moz-box-shadow: 0px 0px 5px 0px #444;
+    box-shadow: 0px 0px 5px 0px #444;
+
+    /*round corners*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(left, #D8E7FC, #F9FCFF); 
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, left top, right top, from(#D8E7FC), to(#F9FCFF)); 
+    /* Safari 5.1+, Chrome 10+ */ 
+    background: -webkit-linear-gradient(left, #D8E7FC, #F9FCFF);
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(left, #D8E7FC, #F9FCFF);
+}
+
+#add_form img{
+    display: inline;
+    float: right;
+    margin-right:20px;
+    margin-top: 30px;
+    width: 150px;
+    height: 100px;
+}   
+
+#add_form label{
+    display: inline-block;
+    font-weight: bold;
+    float: left;
+    clear: left;
+    margin-bottom: 2px;
+}
+
+#add_form input,select{
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 2px;
+    float: left;
+    clear: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+#add_form textarea{
+    margin-bottom: 5px;
+    float: left;
+    clear: both;
+}
+
+#add_formSubmitBtn{
+    margin-right: 10px;
+    float: right;
+}
+
+.cfinset{
+    border-style: inset;
+    color: black;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+
+
+#container_main{
+    /*#FFFFFB*/
+    width:100%;
+    /*padding-bottom: 20px;*/
+    padding-top: 20px;
+}
+
+
+.container_basic{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    padding-top:15px;
+    padding-bottom:20px;
+    width:70%;
+    overflow: auto;
+
+    color: black;
+
+    /* drop shadow */
+    -webkit-box-shadow: 0px 5px 5px 0px #444;
+    -moz-box-shadow: 0px 5px 5px 0px #444;
+    box-shadow: 0px 5px 5px 0px #444;
+
+    /*round corners*/
+    -moz-border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    border-radius: 0px 10px 10px 10px; /* future proofing */
+    -khtml-border-radius: 0px 10px 10px 10px; /* for old Konqueror browsers */
+
+    /* Firefox 3.6+ ECECEC */ 
+    background: -moz-linear-gradient(left, #F3F3F3, #F9FCFF); 
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, left top, right top, from(#F3F3F3), to(#F9FCFF)); 
+    /* Safari 5.1+, Chrome 10+ */ 
+    background: -webkit-linear-gradient(left, #F3F3F3, #F9FCFF);
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(left, #F3F3F3, #F9FCFF);
+}
+
+.container_basic h1,.container_basic p{
+    text-align: center;
+    color: #848484;
+}
+
+.container_basic_entry{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    padding-top:15px;
+    padding-bottom:10px;
+    width:90%;
+    overflow: auto;
+
+    color: black;
+    font-size: 12pt;
+
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(left, #B9FFCB, #F9FCFF); 
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, left top, right top, from(#B9FFCB), to(#F9FCFF)); 
+    /* Safari 5.1+, Chrome 10+ */ 
+    background: -webkit-linear-gradient(left, #B9FFCB, #F9FCFF);
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(left, #B9FFCB, #F9FCFF);
+}
+
+#container_main table{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#container_main table, #container_main th, #container_main td {
+    border:1px solid green;
+    border-style: inset;
+    font-size: 12pt;
+}
+
+#container_main th,#container_main td {
+    padding-left: 5px;
+}
+
+table a{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+#container_main a:hover{
+    color: red;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/

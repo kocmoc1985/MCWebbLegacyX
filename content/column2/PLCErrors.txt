@@ -1,0 +1,9 @@
+﻿F11_PLC Fehler: Zusammen „MC control“ & „total add“ Digitale Signale
+F12_PLC Fehler: Zusammen „PLC control“ & „MC Control“ Dgitale Signale sind  gleichzeitig active
+F13_PLC Fehler: Zusammen „PLC control“ & „MC Control“ sind vermißt worden
+F14_PLC Fehler: Einige Aufgabevorrichtung & „Stempel zu“ Digitalsignale sind gleichzeitig active 
+F15_PLC Fehler: Digitalsignal „Total add“ ist aktive während ganze Charge
+F16_PLC Fehler: Digital Signale „total add“ ist vermißt worden
+F17_PLC Fehler: keine  Digitalsignale "PLC Steuerung  während ganze Charge"
+F18_PLC Fehler: Ablauf  Signal ist vermißt worden
+F19_PLC Fehler: Elektromagnetische Interferenz der alle Signale
