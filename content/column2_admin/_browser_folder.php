@@ -42,7 +42,6 @@
 
 <?php
 include_once ("/php/lib.php");
-
 ?>
 
 <div id="add_form" style="width: 50%">
@@ -53,8 +52,8 @@ include_once ("/php/lib.php");
 
         <label>Link Name</label>
         <input class="cfinset" type="text" name="pseudo_link_name" size="50" >
-        
-         <label>Folder Name</label>
+
+        <label>Folder Name</label>
         <input class="cfinset" type="text" name="real_folder_name" size="50" >
 
         <input id="add_formSubmitBtn" type="submit" value="Submit">
@@ -62,10 +61,10 @@ include_once ("/php/lib.php");
 </div>
 
 <?php
+list_links_and_folders();
+list_links_browser_path();
 
-list_ban_ips();
-
-function list_ban_ips() {
+function list_links_and_folders() {
     echo "<div class='list'>";
     echo "<h3>List all folders</h3>";
     echo "<table style='font-size:10pt'>";
@@ -90,7 +89,42 @@ function list_ban_ips() {
         }
 
 //        $id = $row['id'];
+//        echo "<td>";
+//        echo "<a href='index.php?link=_ban_ban&amp;action=delete_ban_ip&amp;value=$id'>delete</a>";
+//        echo "</td>";
 
+        echo "</tr>";
+        //========
+    }
+    echo "</table>";
+    echo "</div>";
+}
+
+function list_links_browser_path() {
+    echo "<div class='list'>";
+    echo "<h3>List path to browser</h3>";
+    echo "<table style='font-size:10pt'>";
+
+    build_table_headers("ajax_browser_combined_link");
+
+    $q = "select * from ajax_browser_combined_link";
+    $result = executeSelectQuery($q);
+
+    //loops through the rows
+    while ($row = mysqli_fetch_array($result)) {
+
+        //new row
+        echo "<tr>";
+        $counter = 0;
+
+        //loops through the columns
+        while (isset($row["$counter"])) {
+            //new column
+            echo "<td>$row[$counter]</td>";
+            $counter++;
+        }
+
+//        $id = $row['id'];
 //        echo "<td>";
 //        echo "<a href='index.php?link=_ban_ban&amp;action=delete_ban_ip&amp;value=$id'>delete</a>";
 //        echo "</td>";

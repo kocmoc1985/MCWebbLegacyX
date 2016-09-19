@@ -20,7 +20,7 @@
     <a href="http://mixcont.com/index.php?link=_send_send_mail" target="blank_">Send Mail</a>
     <a href="http://mixcont.com/index.php?link=_work_ip" target="blank_">Work Ip</a>
     <a href="http://mixcont.com/index.php?link=_manuals" target="blank_">Manuals</a>
-    <a href="http://mixcont.com/index.php?link=__mclauncher" target="blank_">MCLauncherLog</a>
+    <a href="http://mixcont.com/index.php?link=_mclauncher" target="blank_">MCLauncherLog</a>
     <a href="http://mixcont.com/index.php?link=_browser_folder" target="blank_">Create new folder ajax Browser</a>
     <a href="http://mixcont.com/index.php?link=_opc_signals&company_short_name_opc=siemens" target="blank_">OPC signals interface</a>
     <a href="http://mixcont.com/index.php?link=_castomerz" target="blank_">Reports</a>

@@ -57,7 +57,7 @@ function createNewBrowserFolder(){
     $pseudo_link_name = $_POST['pseudo_link_name'];
     $real_folder_name = $_POST['real_folder_name'];
     
-    createFolder("_files", '$real_folder_name');
+    createFolder("_files", $real_folder_name);
     
     $querry1 = "insert into ajax_browser_combined_link values ('$pseudo_link_name','_upload_main_ajax')";
     $querry2 = "insert into ajax_browser_home_folder values ('$pseudo_link_name','$real_folder_name')";
