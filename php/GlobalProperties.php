@@ -122,30 +122,6 @@ function work_ip_log_path() {
 }
 
 //==============================================================================
-/**
- * @not_used
- * @param type $link
- * @return boolean
- */
-function isAdminPlugin($link) {
-    $arr = array(
-        "_admin",
-        "_login",
-        "_test",
-        "_upload",
-        "_visitors",
-        "_ajax_client_ex_1",
-        "_manuals",
-        "_browser_folder"
-    );
-
-    foreach ($arr as $value) {
-        if (strstr($link, $value)) {
-            return true;
-        }
-    }
-    return false;
-}
 
 function isOnlyColumn2($link) {
     $arr = array(
@@ -157,10 +133,10 @@ function isOnlyColumn2($link) {
         "_ban_ban",
         "_login",
         "_admin",
-//        "_test",
         "_c_",
         "_work_ip",
         "_mclauncher",
+        "_calendar",
         //
         "_upload",
         "_upload_public",

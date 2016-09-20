@@ -102,7 +102,7 @@ root {
     margin-bottom: 2px;
 }
 
-#add_form input,select{
+#add_form input,#add_form select{
     margin-bottom: 10px;
     display: inline-block;
     margin-top: 2px;
