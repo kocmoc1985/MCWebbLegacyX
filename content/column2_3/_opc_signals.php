@@ -91,7 +91,7 @@ if (isset($_GET['company_short_name_opc'])) {
 
 <h2 style="text-align: center">OPC Signals Interface</h2>
 
-<div class="fill_in_opc" id="add_form" style="width: 95%">
+<div class="fill_in_opc" id="add_form" style="width: 100%">
     <!--<img src="images/xxx.png" alt="contact_envelope_1">-->
     <button class="show_hide_btn"  type="button">show/hide</button>
     <h3>OPC Signals table (Create new)</h3>
@@ -424,7 +424,7 @@ function display_or_edit_filled_signals_files($company_short_name_or_file_name, 
                 //
                 $last_modified_date = date("F d Y H:i:s", filemtime("$path./$file"));
                 //
-                echo "<div class='show_opc_interface' id='add_form' style='width: 95%'>";
+                echo "<div class='show_opc_interface' id='add_form' style='width: 100%'>";
                 //
                 echo " <button class='show_hide_btn' type=¨'button'>show/hide</button>";
                 //
@@ -616,7 +616,7 @@ function add_file_browser_opc_signals_component($link) {
         return;
     }
     //
-    echo "<div style='width:50%;margin-left:10px;margin-top:30px;'>";
+    echo "<div style='width:95%;margin-left:10px;margin-top:30px;'>";
     //
     //OBS! OBS! OBS!
     $_SESSION['link_session'] = "_" . $link;
