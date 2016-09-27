@@ -128,11 +128,12 @@ function DEFINE_OTHER_SESSION_VARIABLES() {
   "areacode": ""
  */
 function DEFINE_COUNTRY() {
-    $location = file_get_contents('http://freegeoip.net/json/' . $_SERVER['REMOTE_ADDR']);
+    $link = 'http://ip-api.com/json/' . $_SERVER['REMOTE_ADDR'];
+    $location = file_get_contents($link);
     $json_a = json_decode($location, true);
 
-    $ip = $json_a['ip'];
-    $country_code = $json_a['country_code'];
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $country_code = $json_a['countryCode'];
     $city = $json_a['city'];
 
     print_silent_variables("ip", getIP());
@@ -169,24 +170,10 @@ function LOG_VISITORS() {
         return;
     }
 
-//    if (
-//            $ip_raw == "213.115.93.254" ||
-//            $ip_raw == "localhost" ||
-//            $ip_raw == "127.0.0.1" ||
-//            $ip_raw == "78.82.66.195"
-//    ) {
-//        return;
-//    }
-    //=======================
-
     if (get_if_an_entry_from_db_matches_given_text($user_details, "select * from visitor_info", 1)) {
         return;
     }
 
-//    if (strpos(strtolower($user_details), "bot") || strpos(strtolower($user_details), "spider") || strpos(strtolower($user_details), "crawler") || strpos(strtolower($user_details), "help@moz.com")
-//    ) {
-//        return;
-//    }
     //=======================
 
     $querry = "insert into visitors values ('$ip','$link','$date','$user_details')";

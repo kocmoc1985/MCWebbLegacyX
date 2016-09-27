@@ -18,10 +18,9 @@ DEFINE_OTHER_SESSION_VARIABLES();
 
 //DEFINE_COUNTRY();
 if (isLocalHost() == false) {
-    DEFINE_COUNTRY_2();
+    DEFINE_COUNTRY();
     LOG_VISITORS();
     FILTER_VISITORS();
-    
 }
 //
 LOG_INGFO(); //things as language, link 
