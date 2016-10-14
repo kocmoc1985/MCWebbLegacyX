@@ -144,6 +144,7 @@ function isOnlyColumn2($link) {
         "_cezare_3g",
         "_upload_MC_HF",
         "_upload_MC_CORDIANT",
+        "_goetfert",
         //
         "safonov",
     );
